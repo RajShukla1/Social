@@ -35,9 +35,13 @@
     font-style: 18px;
     font-weight: 500;
     margin-bottom: 10px;
+    background-color: #566cac;
+    color: white;
 }
 .rightbarInfo{
     margin-bottom: 30px;
+    background-color: whitesmoke;
+    border-radius: 2%;
 }
 .rightbarInfoItem{
     margin-bottom: 10px;

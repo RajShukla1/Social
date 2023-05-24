@@ -1,4 +1,4 @@
- import { Favorite, HeartBrokenTwoTone, HeatPumpRounded, MoreVert, ThumbUp } from "@mui/icons-material";
+ import { Favorite, Comment, MoreVert, ThumbUp } from "@mui/icons-material";
 import "./post.css";
 import {Users} from "../../dummyData";
 import { useState } from "react";
@@ -35,7 +35,8 @@ export default function Post({ post }) {
                     <span className="postLikeCounter">{like} people like it</span>
                 </div>
                 <div className="postBottomRight">
-                    <span className="postCommentText">{post.comment} comments</span>
+                    <span className="postCommentText">{post.comment} comments<Comment></Comment></span>
+                    
                 </div>
             </div>
         </div>

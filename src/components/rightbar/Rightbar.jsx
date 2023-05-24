@@ -1,4 +1,4 @@
-import { Cake } from "@mui/icons-material"
+import { Cake, Comment } from "@mui/icons-material"
 import "./rightbar.css"
 import {Users} from "../../dummyData";
 import Online from "../online/Online";
@@ -46,30 +46,14 @@ export default function Rightbar({profile}) {
       </div>
       <h4 className="rightbarTitle">User Friends</h4>
       <div className="rightbarFollowings">
-        <div className="rightbarFollowing">
-          <img src="assets/person/5.jpg" alt="" className="rightbarFollowingImg" />
-          <span className="rightbarFollowingName">Dhawan Mishra</span>
-        </div>
-        <div className="rightbarFollowing">
-          <img src="assets/person/4.jpg" alt="" className="rightbarFollowingImg" />
-          <span className="rightbarFollowingName">Dhawan Mishra</span>
-        </div>
-        <div className="rightbarFollowing">
-          <img src="assets/person/2.jpg" alt="" className="rightbarFollowingImg" />
-          <span className="rightbarFollowingName">Dhawan Mishra</span>
-        </div>
-        <div className="rightbarFollowing">
-          <img src="assets/person/3.jpg" alt="" className="rightbarFollowingImg" />
-          <span className="rightbarFollowingName">Dhawan Mishra</span>
-        </div>
-        <div className="rightbarFollowing">
-          <img src="assets/person/5.jpg" alt="" className="rightbarFollowingImg" />
-          <span className="rightbarFollowingName">Dhawan Mishra</span>
-        </div>
-        <div className="rightbarFollowing">
-          <img src="assets/person/5.jpg" alt="" className="rightbarFollowingImg" />
-          <span className="rightbarFollowingName">Dhawan Mishra</span>
-        </div>
+        {Users.map(friend=>{
+          return(
+            <div className="rightbarFollowing">
+              <img src={friend.profilePicture} alt="" className="rightbarFollowingImg" />
+              <span className="rightbarFollowingName">{friend.username}</span>
+            </div>
+          )
+        })}
       </div>
       </>
     )

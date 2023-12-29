@@ -2,6 +2,7 @@
 import "./post.css";
 import {Users} from "../../dummyData";
 import { useState } from "react";
+import { showImage } from "../utils/showImage";
 
 export default function Post({ post }) {
     const [user] = Users.filter(u=>u.id === post.userId)
@@ -16,7 +17,10 @@ export default function Post({ post }) {
         <div className="postWrapper">
             <div className="postTop">
                 <div className="postTopLeft">
-                    <img src={user.profilePicture} alt="" className="postProfileImg" />
+                    <span className="imageContainer">
+                    <span className="profileImage hide">{user.username[0]}</span>
+                    <img src={user.profilePicture} alt="" onError={(e)=>showImage(e)} className="postProfileImg" />
+                    </span>
                     <span className="postUsername">{user.username}</span>
                     <span className="postDate">{post.date}</span>
                 </div>

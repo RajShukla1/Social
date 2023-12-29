@@ -1,0 +1,13 @@
+.profileImage {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #512DA8;
+    font-size: 27px;
+    color: #fff;
+    text-align: center;
+  }
+  .hide{
+    display: none;
+  }

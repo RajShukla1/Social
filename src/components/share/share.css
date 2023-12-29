@@ -64,3 +64,14 @@
     color:white;
 
 }
+
+@media screen and (max-width: 480px) {
+    .shareOption{
+        display: flex;
+        flex-direction: column;
+    }
+    .shareOptionText{
+        font-size: 8px;
+        font-weight: 500;
+    }
+}

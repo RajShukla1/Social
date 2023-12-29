@@ -84,3 +84,40 @@
     object-fit: cover;
     cursor: pointer;
 }
+
+@media screen and (max-width: 480px) {
+    .topbarContainer{
+        height: 40px;
+    }
+    .logo{
+        font-size: 18px;
+        margin-left: 5px
+    }
+    .topbarLink{
+        margin-right: 3px;
+        font-size: 16px;
+        cursor: pointer;
+        text-decoration: none;
+        color: white;
+    }
+.topbarCenter{
+    display: none;
+}
+.topbarIconBadge{
+    width: 10px;
+    height: 10px;
+    top: -2px;
+    right: -2px;
+    font-size: 6px;
+
+}
+.topbarIconItem{
+    margin-right: 10px;
+    cursor: pointer;
+    position: relative;
+}
+.topbarImg{
+    height: 28px;
+    width: 28px;
+}
+}

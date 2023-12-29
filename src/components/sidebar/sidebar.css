@@ -47,3 +47,8 @@
     margin: 0;
     list-style: none;
 }
+@media screen and (max-width: 480px) {
+    .sidebar{
+      display: none;
+    }
+  }
